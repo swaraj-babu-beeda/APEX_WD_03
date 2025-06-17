@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #1e1e2f;
+  color: #e0e0e0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+footer {
+  background: #12121c;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+#quiz-container {
+  background: #2a2a3d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#options button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#options button:hover {
+  background-color: #357ab8;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5c5cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background-color: #4040cc;
+}
+
+/* Weather Section */
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: #29293d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+#city-input {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  margin: 10px 0;
+  background-color: #1e1e2f;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+
+#get-weather-btn {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#get-weather-btn:hover {
+  background-color: #357ab8;
+}
+
+#weather-result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #d0d0ff;
+}
+
+/* Joke Section */
+#joke {
+  margin-top: 40px;
+  background: #3a3a4f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+#joke-btn {
+  padding: 10px 20px;
+  background-color: #ffb84d;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#joke-btn:hover {
+  background-color: #e69900;
+}
+
+#joke-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffd;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px;
+  color: #e0e0e0;
+}
+
+.nav-links {
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #333950;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.nav-links li {
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+.nav-links li:hover {
+  background-color: #2a2f45;
+}
+
+.nav-links li:last-child {
+  border-bottom: none;
+}

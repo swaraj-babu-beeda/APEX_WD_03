@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="hamburger-menu">
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li data-target="quiz-container">Take a Quiz</li>
+      <li data-target="weather">Weather</li>
+      <li data-target="joke">Tell a Joke</li>
+    </ul>
+  </div>
+
+  <main>
+    <div id="quiz-container">
+      <h2 id="question">Loading question...</h2>
+      <div id="options"></div>
+      <button id="next-btn">Next</button>
+      <p id="score"></p>
+    </div>
+  </main>
+
+  <section id="weather">
+    <h2>Check Current Weather</h2>
+    <input type="text" id="city-input" placeholder="Enter city name" />
+    <button id="get-weather-btn">Get Weather</button>
+    <div id="weather-result"></div>
+  </section>
+
+  <section id="joke">
+    <h2>Tell Me a Joke</h2>
+    <button id="joke-btn">Get Joke</button>
+    <p id="joke-text"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ashish Ravipati</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
